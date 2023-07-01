@@ -389,6 +389,7 @@
     }
 
     video {
+      opacity: 0.7;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -404,10 +405,15 @@
 <body>
 
   <div class="video-wrapper">
-    <video autoplay muted loop>
-      <source src="./background-lights.mp4" type="video/mp4">
+    <video autoplay loop muted poster="./background-lights.jpg" id="background">
+      <source src="./background-lights-op.mp4" type="video/mp4">
+      <source src="./background-lights-op.webm" type="video/webm">
+      <source src="./background-lights-op.ogv" type="video/ogg">
     </video>
   </div>
+
+
+ 
 
   <div class="card">
 
@@ -492,7 +498,7 @@
           <p>Patricio Ham 938, Gral. Rodríguez, Provincia de Buenos Aires, Argentina</p>
         </div>
 
-        <a href="#" class="maps-button">Click para ver en Maps</a>
+        <a href="https://maps.app.goo.gl/srZYLhiNBuprChji9" target="_blank" rel="noopener" class="maps-button">Click para ver en Maps</a>
       </footer>
     </div><!-- .card-background-back -->
   </div><!-- .card -->
