@@ -41,8 +41,9 @@
     }
 
     body {
-      padding: 10px;
       position: relative;
+      padding: 10px;
+      box-sizing: border-box;
     }
 
     body::before {
@@ -380,10 +381,33 @@
     body .small-text {
       font-size: 12px;
     }
+
+    .video-wrapper {
+      overflow: hidden;
+      position: fixed;
+      inset: 0;
+    }
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
   </style>
 </head>
 
 <body>
+
+  <div class="video-wrapper">
+    <video autoplay muted loop>
+      <source src="./background-lights.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <div class="card">
 
